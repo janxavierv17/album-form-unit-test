@@ -8,6 +8,7 @@ Please follow these steps to set up and run the project locally.
 2. Jest
 3. react-testing-library
 4. Redux & redux-saga
+5. styled-components
 
 ## Installation
 
