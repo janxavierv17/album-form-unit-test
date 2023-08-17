@@ -1,3 +1,4 @@
+import * as React from "react";
 import PropTypes from "prop-types";
 import { StyledForm } from "./Form.styles";
 export const Form = ({ handleChange, handleSubmit, formData, isLoading }) => {
