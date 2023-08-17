@@ -1,9 +1,11 @@
-import { PhotoAlbum } from "./layouts/PhotoAlbum/PhotoAlbum";
+import { Outlet } from "react-router-dom";
+import { NavigationBar } from "./components/Navigation/NavigationBar";
 function App() {
 	return (
-		<>
-			<PhotoAlbum />
-		</>
+		<div>
+			<NavigationBar />
+			<Outlet />
+		</div>
 	);
 }
 
