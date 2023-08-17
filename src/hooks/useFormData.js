@@ -1,4 +1,4 @@
-import { useSelector } from "react-redux/es/hooks/useSelector";
+import { useSelector } from "react-redux";
 
 export const useFormData = () => {
 	const user = useSelector((state) => state.user.user);

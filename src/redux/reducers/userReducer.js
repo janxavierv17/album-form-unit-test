@@ -6,8 +6,8 @@ import {
 
 const initialState = {
 	user: null,
-	isLoading: false,
-	isError: false,
+	loading: false,
+	error: false,
 };
 
 export const userReducer = (state = initialState, action) => {
