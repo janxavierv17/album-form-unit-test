@@ -22,11 +22,11 @@ Once the above is done the project will be accessible at http://localhost:5173
 
 Please use the navigation bar to navigate to Tasks 1, Task 2 and run the command npm run test for task 3.
 
-## Task 1
+## Task 1 - http://localhost:5173/albums
 
 Find out how https://jsonplaceholder.typicode.com/ REST API works and make a web page to display all photos in album id:1. You need to use React framework with any tools/packages you like to style the page.
 
-## Task 2
+## Task 2 - http://localhost:5173/form
 
 Create a page with a form to submit new user to https://jsonplaceholder.typicode.com/.
 
