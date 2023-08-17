@@ -1,9 +1,21 @@
 import * as React from "react";
 import PropTypes from "prop-types";
-import { StyledForm } from "./Form.styles";
-export const Form = ({ handleChange, handleSubmit, formData, isLoading }) => {
+import { StyledForm, Notification } from "./Form.styles";
+export const Form = ({
+	handleChange,
+	handleSubmit,
+	formData,
+	isLoading,
+	isError,
+	user,
+}) => {
 	return (
 		<StyledForm onSubmit={handleSubmit}>
+			{user && !isLoading ? (
+				<Notification>
+					Submitted a new user named {user.firstName} succesfully.
+				</Notification>
+			) : null}
 			<div>
 				<label htmlFor="firstName">First name:</label>
 				<input
@@ -35,7 +47,12 @@ Form.propTypes = {
 	handleChange: PropTypes.func.isRequired,
 	handleSubmit: PropTypes.func.isRequired,
 	isLoading: PropTypes.bool,
+	isError: PropTypes.bool,
 	formData: PropTypes.shape({
+		firstName: PropTypes.string,
+		lastName: PropTypes.string,
+	}),
+	user: PropTypes.shape({
 		firstName: PropTypes.string,
 		lastName: PropTypes.string,
 	}),

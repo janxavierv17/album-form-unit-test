@@ -5,7 +5,7 @@ import { postUser } from "../../redux/actions/usersActions";
 import { Form } from "../../components/Form/Form";
 import { useFormData } from "../../hooks/useFormData";
 export const FormContainer = () => {
-	const { isLoading, isError } = useFormData();
+	const { user, isLoading, isError } = useFormData();
 	const dispatch = useDispatch();
 	const [formData, setFormData] = useState({
 		firstName: "",
@@ -36,6 +36,7 @@ export const FormContainer = () => {
 			formData={formData}
 			isLoading={isLoading}
 			isError={isError}
+			user={user}
 		/>
 	);
 };

@@ -1,5 +1,7 @@
 import styled from "styled-components";
-
+export const Notification = styled.p`
+	color: green;
+`;
 export const StyledForm = styled.form`
 	width: 300px;
 	margin: 0 auto;
