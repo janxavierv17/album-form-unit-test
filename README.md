@@ -12,7 +12,7 @@ Please follow these steps to set up and run the project locally.
 
 ## Installation
 
-1. Close the repository
+1. Clone the repository
 2. run **npm i**
 3. finally, run the command **npm run dev**
 
