@@ -1,5 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import { PhotoAlbum } from "./layouts/PhotoAlbum/PhotoAlbum";
+import { FormLayout } from "./layouts/Form/Form";
 import ErrorPage from "./components/Error/ErrorPage";
 import App from "./App";
 
@@ -15,7 +16,7 @@ export const Routes = createBrowserRouter([
 			},
 			{
 				path: "form",
-				element: <h1>Form Component</h1>,
+				element: <FormLayout />,
 			},
 		],
 	},
